@@ -2,6 +2,7 @@ import { Hr } from "#/components/Hr"
 import { Courses } from "./Courses"
 import { Educations } from "./Educations"
 import { Experiences } from "./Experiences"
+import { Footer } from "./Footer"
 import { Header } from "./Header"
 import { Projects } from "./Projects"
 import { Skills } from "./Skills"
@@ -21,6 +22,7 @@ export default function Home() {
       <Hr />
       <Courses />
       <Hr />
+      <Footer />
     </div>
   )
 }
