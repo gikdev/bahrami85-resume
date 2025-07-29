@@ -1,5 +1,13 @@
 import { z } from "zod"
 
+const TimeSchema = z.union([
+  z.string(),
+  z.object({
+    from: z.string(),
+    to: z.string(),
+  }),
+])
+
 // Skills
 export const SkillSchema = z.object({
   id: z.string(),
@@ -14,8 +22,7 @@ export const ProjectSchema = z.object({
   id: z.string(),
   name: z.string(),
   company: z.string(),
-  from: z.string(),
-  to: z.string(),
+  time: TimeSchema,
   description: z.string(),
 })
 export const ProjectsSchema = z.array(ProjectSchema)
@@ -27,8 +34,7 @@ export const ExperienceSchema = z.object({
   roleName: z.string(),
   company: z.string(),
   city: z.string(),
-  from: z.string(),
-  to: z.string(),
+  time: TimeSchema,
   description: z.string(),
 })
 export const ExperiencesSchema = z.array(ExperienceSchema)
@@ -40,9 +46,20 @@ export const EducationSchema = z.object({
   title: z.string(),
   place: z.string(),
   city: z.string(),
-  from: z.string(),
-  to: z.string(),
+  time: TimeSchema,
   description: z.string(),
 })
 export const EducationsSchema = z.array(EducationSchema)
 export type Education = z.infer<typeof EducationSchema>
+
+// Courses
+export const CourseSchema = z.object({
+  id: z.string(),
+  title: z.string(),
+  place: z.string(),
+  time: TimeSchema,
+  description: z.string(),
+  url: z.string().optional(),
+})
+export const CoursesSchema = z.array(CourseSchema)
+export type Course = z.infer<typeof CourseSchema>

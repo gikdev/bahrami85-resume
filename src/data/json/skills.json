@@ -15,6 +15,11 @@
     "description": "Git, GitHub, BiomeJS, VS Code, NPM"
   },
   {
+    "id": "testing",
+    "title": "Testing",
+    "description": "Vitest, Playwright"
+  },
+  {
     "id": "apis",
     "title": "APIs",
     "description": "REST APIs"
@@ -33,10 +38,5 @@
     "id": "languages",
     "title": "Languages",
     "description": "English (CEFR Level: B2)"
-  },
-  {
-    "id": "keyboard",
-    "title": "Keyboard",
-    "description": "70 WPM with 93% accuracy (tested on 10fastfingers.com)"
   }
 ]

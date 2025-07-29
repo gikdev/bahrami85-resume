@@ -1,4 +1,5 @@
 import { Hr } from "#/components/Hr"
+import { Courses } from "./Courses"
 import { Educations } from "./Educations"
 import { Experiences } from "./Experiences"
 import { Header } from "./Header"
@@ -17,6 +18,8 @@ export default function Home() {
       <Experiences />
       <Hr />
       <Educations />
+      <Hr />
+      <Courses />
       <Hr />
     </div>
   )
