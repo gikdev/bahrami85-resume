@@ -31,7 +31,7 @@ export const Header = () => (
       تمرکز بر کیفیت، کدنویسی تمیز و ارائه تجربه کاربری روان و خوب.
     </p>
 
-    <div className="flex items-center justify-between w-full" dir="ltr">
+    <div className="flex flex-col sm:flex-row gap-3 items-center justify-between w-full" dir="ltr">
       <IconLink
         Icon={GlobeIcon}
         href="https://bahrami85.ir"
