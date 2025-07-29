@@ -1,5 +1,6 @@
 import { Hr } from "#/components/Hr"
-import { Experiences } from "./Experience"
+import { Educations } from "./Educations"
+import { Experiences } from "./Experiences"
 import { Header } from "./Header"
 import { Projects } from "./Projects"
 import { Skills } from "./Skills"
@@ -14,6 +15,8 @@ export default function Home() {
       <Projects />
       <Hr />
       <Experiences />
+      <Hr />
+      <Educations />
       <Hr />
     </div>
   )

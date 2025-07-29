@@ -1,4 +1,5 @@
 import { CodeIcon, CodeSimpleIcon } from "@phosphor-icons/react/dist/ssr"
+import ReactMarkdown from "react-markdown"
 import { projects } from "#/data"
 import { section } from "#/shared/skins"
 import { Card } from "./Card"
@@ -16,7 +17,9 @@ export const Projects = () => (
           title={project.name}
           subtitle={`${project.company} (${project.from} - ${project.to})`}
         >
-          <p>{project.description}</p>
+          <div className="contents prose-ul:list-disc prose-ul:ps-4">
+            <ReactMarkdown>{project.description}</ReactMarkdown>
+          </div>
         </Card>
       ))}
     </ul>
