@@ -3,6 +3,7 @@
   "version": "0.1.0",
   "private": true,
   "scripts": {
+    "liara": "liara",
     "validate-data": "bun run ./src/data/validate.ts",
     "check": "biome check --write",
     "predev": "npm run validate-data",
@@ -24,6 +25,7 @@
   },
   "devDependencies": {
     "@biomejs/biome": "2.1.2",
+    "@liara/cli": "^9.2.0",
     "@tailwindcss/postcss": "^4",
     "@types/node": "^20",
     "@types/react": "^19",
