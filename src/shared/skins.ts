@@ -1,7 +1,7 @@
 import { cva } from "./cva.config"
 
 export const section = cva({
-  base: "p-12 gap-6 flex flex-col",
+  base: "py-12 px-6 sm:px-12 gap-6 flex flex-col",
   variants: {
     centerish: {
       false: null,
