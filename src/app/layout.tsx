@@ -2,6 +2,7 @@ import type { Metadata } from "next"
 import type { PropsWithChildren } from "react"
 import "./styles.css"
 import { vazirmatn } from "#/assets/fonts/Vazirmatn"
+import { cx } from "#/shared/cva.config"
 
 export const metadata: Metadata = {
   title: "محمدمهدی بهرامی",
@@ -9,9 +10,18 @@ export const metadata: Metadata = {
 }
 
 export default function RootLayout({ children }: PropsWithChildren) {
+  const htmlClassName = cx(
+    "bg-tusi-950 text-tusi-400 flex",
+    "flex-col items-center antialiased min-h-dvh",
+    "selection:bg-brand-600 selection:text-tusi-100",
+    vazirmatn.className,
+  )
+
   return (
-    <html lang="fa" dir="rtl">
-      <body className={`${vazirmatn.className} antialiased`}>{children}</body>
+    <html lang="fa" dir="rtl" className={htmlClassName}>
+      <body className="max-w-201 w-full flex flex-col min-h-dvh">
+        {children}
+      </body>
     </html>
   )
 }
