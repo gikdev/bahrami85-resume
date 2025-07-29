@@ -1,5 +1,5 @@
 import { CodeIcon, CodeSimpleIcon } from "@phosphor-icons/react/dist/ssr"
-import { projects } from "#/assets/data"
+import { projects } from "#/data"
 import { section } from "#/shared/skins"
 import { Card } from "./Card"
 import { IconHeading } from "./IconHeading"

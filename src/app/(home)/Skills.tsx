@@ -1,5 +1,5 @@
 import { LightningIcon, WrenchIcon } from "@phosphor-icons/react/dist/ssr"
-import { skills } from "#/assets/data"
+import { skills } from "#/data"
 import { section } from "#/shared/skins"
 import { IconHeading } from "./IconHeading"
 
