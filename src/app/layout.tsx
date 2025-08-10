@@ -1,7 +1,7 @@
 import type { Metadata } from "next"
 import type { PropsWithChildren } from "react"
 import "./styles.css"
-import { vazirmatn } from "#/assets/fonts/Vazirmatn"
+import { lahzeh } from "#/assets/fonts/Lahzen"
 import { cx } from "#/shared/cva.config"
 
 export const metadata: Metadata = {
@@ -14,7 +14,7 @@ export default function RootLayout({ children }: PropsWithChildren) {
     "bg-tusi-950 text-tusi-400 flex",
     "flex-col items-center antialiased min-h-dvh",
     "selection:bg-brand-600 selection:text-tusi-100",
-    vazirmatn.className,
+    lahzeh.className,
   )
 
   return (

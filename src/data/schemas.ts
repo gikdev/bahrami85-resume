@@ -47,7 +47,7 @@ export const EducationSchema = z.object({
   place: z.string(),
   city: z.string(),
   time: TimeSchema,
-  description: z.string(),
+  description: z.string().nullable(),
 })
 export const EducationsSchema = z.array(EducationSchema)
 export type Education = z.infer<typeof EducationSchema>

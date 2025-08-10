@@ -33,7 +33,7 @@ function mapCourse(c: Course) {
       subtitle={subtitle}
       endSlot={endSlot}
     >
-      <div className="prose-ul:list-disc prose-ul:ps-4">
+      <div className="prose-ul:list-disc prose-ul:ps-4 prose-a:border-b prose-a:border-current prose-a:hover:text-brand-500">
         <ReactMarkdown>{c.description}</ReactMarkdown>
       </div>
     </Card>

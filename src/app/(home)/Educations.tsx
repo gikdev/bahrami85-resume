@@ -28,9 +28,11 @@ function mapEducation(edu: Education) {
       title={edu.title}
       subtitle={subtitle}
     >
-      <div className="prose-ul:list-disc prose-ul:ps-4">
-        <ReactMarkdown>{edu.description}</ReactMarkdown>
-      </div>
+      {edu.description && (
+        <div className="prose-ul:list-disc prose-ul:ps-4 prose-a:border-b prose-a:border-current prose-a:hover:text-brand-500">
+          <ReactMarkdown>{edu.description}</ReactMarkdown>
+        </div>
+      )}
     </Card>
   )
 }
